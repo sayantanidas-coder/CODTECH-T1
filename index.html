@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="background-image"></div>
+  <header>
+    <h1>Quiz Application</h1>
+  </header>
+  <main>
+    <div id="quiz-container">
+      <div id="timer">Time Left: <span id="time">10</span>s</div>
+      <div id="question-container">
+        <p id="question"></p>
+        <div id="options">
+          <ul>
+            <li class="option">Option 1</li>
+            <li class="option">Option 2</li>
+            <li class="option">Option 3</li>
+            <li class="option">Option 4</li>
+          </ul>
+        </div>        
+      </div>
+      <button id="next-btn" disabled>Next</button>
+    </div>
+    <div id="result-container" style="display: none;">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Quiz Application</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
